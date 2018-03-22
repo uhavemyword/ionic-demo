@@ -2,5 +2,27 @@ page-scan {
     ion-content.scan-area {
         background: none transparent;
     }
+    
+    .page-scan-camera-ready {
+        // view background is transparent to show video preview
+        background: none transparent;
+        height: 100%;
+        .guides {
+          display: flex;
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          top: 0;
+          left: 0;
+          .qr-scan-guides {
+            width: 60%;
+            max-width: 400px;
+            margin-bottom: 8em;
+            max-height: 50%;
+          }
+        }
+    }
 }
 
